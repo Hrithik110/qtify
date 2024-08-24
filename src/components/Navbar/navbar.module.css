@@ -1,9 +1,55 @@
 .navbar {
     background-color: var(--primary);
     height: 4.625rem;
-    padding: 0px 32px;
+    width: 100%;
+    padding: 0px 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
   
+  @media (max-width: 768px) {
+    .navbar {
+        padding: 0 1rem; /* Reduce padding on smaller screens */
+    }
+
+    .navbar .logo {
+        flex: 1; /* Ensure the logo takes available space */
+    }
+
+    .navbar .menu {
+        display: none; /* Hide menu items by default on small screens */
+    }
+
+    .navbar .menu-toggle {
+        display: block; /* Show the menu toggle button */
+        cursor: pointer;
+        font-size: 1.5rem;
+        color: white;
+    }
+
+    .navbar.expanded .menu {
+        display: flex; /* Show menu when navbar is expanded */
+        flex-direction: column; /* Stack menu items vertically */
+        width: 100%; /* Full width for mobile menu */
+        position: absolute; /* Position over content */
+        top: 4.625rem; /* Below the navbar */
+        left: 0;
+        background-color: var(--primary); /* Same background as navbar */
+        padding: 1rem 0;
+        align-items: center;
+    }
+}
+
+/* Tablet and Larger Devices */
+@media (min-width: 769px) {
+    .navbar .menu {
+        display: flex; /* Ensure menu is visible on larger screens */
+        gap: 1rem; /* Space between menu items */
+    }
+
+    .navbar .menu-toggle {
+        display: none; /* Hide the menu toggle on larger screens */
+    }
+}

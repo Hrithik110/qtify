@@ -1,11 +1,36 @@
+/* Hero section styles */
 .hero {
-    background-color: var(--color-black);
-     color: #FFFFFF;
-    height: 270px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    gap: 30px;
+  background-color: var(--color-black);
+  color: #FFFFFF;
+  height: 16.875rem;
+  width: 100%; /* Aligns with the navbar's width */
+  max-width: 100%; /* Prevents overflow beyond the viewport width */
+  padding: 0px 2rem; /* Matches the navbar's padding */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1.875rem;
+  box-sizing: border-box; /* Ensures padding is included in the width */
+}
+
+/* Hero heading styles */
+.hero h1 {
+  font-family: var(--font);
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 3rem;
+  text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero {
+      padding: 0 1rem; /* Reduce padding on smaller screens to match navbar */
   }
-  
+
+  .hero h1 {
+      font-size: 1.5rem; /* Adjust font size for smaller screens */
+      line-height: 2rem;
+  }
+}

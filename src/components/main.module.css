@@ -1,3 +1,10 @@
 .main{
+    /* width: 100vw; */
+    background-color: var(--color-black);
+}
+
+.navbarContainer{
+    display: flex;
+    background-color: var(--primary);
     width: 100%;
 }
