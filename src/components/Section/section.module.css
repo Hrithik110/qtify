@@ -34,11 +34,7 @@
 
 
 }
-.collapsed {
-    display: flex;
-    overflow-x: auto; /* Allow horizontal scrolling */
-    scroll-behavior: smooth;
-}
+
 
 .gridContainer{
     display: grid;
@@ -48,35 +44,13 @@
     row-gap: 3.75rem;
 }
 
-.gridContainer1{
-    display: grid;
-    grid-template-rows:14.5rem;
-    /* overflow: hidden; */
-    max-height: 14.5rem;
-    grid-template-columns: repeat(auto-fit, 100fr); 
-    
-}
+
 .gridItem{
     padding: 0.2rem;
     flex: 0 0 auto;
     width: 12.4375rem; 
 }
-.controls {
-    display: flex;
-    justify-content: space-between;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    padding: 0 1rem;
-}
 
-.controlButton {
-    background-color: var(--color-black);
-    border: none;
-    color: #FFFF;
-    font-size: 1.5rem;
-    cursor: pointer;
-}
 @media (max-width: 768px) {
     .gridContainer{
         display: grid;

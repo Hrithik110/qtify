@@ -20,8 +20,9 @@
     height: 13.125rem;
     gap: 0px;
     border-radius: 10px 10px 0px 0px;
-    opacity: 1;
+    /* opacity: 1; */
     overflow: hidden;
+    /* position: relative; */
     padding-bottom: 0.375rem;
 }
 .album_image img {

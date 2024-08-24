@@ -1,0 +1,52 @@
+
+.arrow{
+    position: relative;
+    border: solid #fff;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    z-index: 1;
+}
+
+.right{
+    transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left{
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }
+
+  .arrowButton{
+    position: absolute;
+    overflow:visible;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
+    background-color: var(--primary);
+    top: 40%;
+    right: 0;
+    transform: translateY(-40%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+  
+  }
+  .arrowButtonL{
+    position: absolute;
+    overflow:visible;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
+    background-color: var(--primary);
+    top: 40%;
+    left: -1rem;
+    transform: translateY(-40%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+  
+  }
