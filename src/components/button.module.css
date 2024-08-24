@@ -1,5 +1,5 @@
 .navButton{
-   
+   display: inline;
     background-color:var(--color-black);
     color: var(--primary);
     font-family: var(--font);
