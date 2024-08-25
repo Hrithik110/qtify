@@ -1,5 +1,5 @@
 .navButton{
-   display: inline;
+    display: inline;
     background-color:var(--color-black);
     color: var(--primary);
     font-family: var(--font);
@@ -16,13 +16,10 @@
     line-height: 27px;
     letter-spacing: 0.25px;
     text-align: center;
-
-}
-
-
-.navButton:hover{
     cursor: pointer;
+
 }
+
 button:hover{
     cursor: pointer;
 }
