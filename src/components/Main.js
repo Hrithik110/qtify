@@ -67,7 +67,10 @@ const Main = () => {
 
 <hr></hr>
   <Section uniqueKey={2} header="Songs" data = {songs} tab={true} ></Section>
+
   <hr></hr>
+
+  <div></div>
     </div>
          
           

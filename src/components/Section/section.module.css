@@ -16,7 +16,6 @@
     color: #FFFF;
     font-family: var(--font);
     font-size: 1.25rem;
-    margin-bottom: 0.5rem;
 }
 .sectionContainer button{
     height: 1.875rem;
@@ -31,8 +30,6 @@
     line-height: 1.875rem;
     text-align: right;
     cursor: pointer;
-
-
 }
 
 
