@@ -14,12 +14,12 @@
   cursor: pointer;
 }
 
-.swiper-button-next {
+.swiper-button-next-0, .swiper-button-next-1, .swiper-button-next-2{
   color: #fff;
   right: 10px;
 }
 
-.swiper-button-prev {
+.swiper-button-prev-0, .swiper-button-prev-1, .swiper-button-prev-2{
   color: #fff;
   left: 10px;
 }

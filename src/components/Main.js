@@ -61,12 +61,12 @@ const Main = () => {
   <Hero />
 
 
-  <Section header="Top Albumns" data = {topData} ></Section>
+  <Section uniqueKey={0} header="Top Albumns" data = {topData} ></Section>
  <hr></hr>
-  <Section header="New Albumns" data = {newData} ></Section>
+  <Section uniqueKey={1} header="New Albumns" data = {newData} ></Section>
 
 <hr></hr>
-  <Section header="Songs" data = {songs} tab={true} ></Section>
+  <Section uniqueKey={2} header="Songs" data = {songs} tab={true} ></Section>
   <hr></hr>
     </div>
          

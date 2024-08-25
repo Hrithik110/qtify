@@ -7,7 +7,7 @@ import { Tab, Tabs } from "@mui/material";
 import BasicTabs from "../Tabs/Tabs";
 
 
-const Section = ({header, data, tab})=>{
+const Section = ({header, data, tab, uniqueKey})=>{
     
     const[collapse, setCollapse] = useState(true);
     const [labels, setLabels] = useState(null);
@@ -58,13 +58,13 @@ const Section = ({header, data, tab})=>{
         {
            !tab && collapse && 
             <>
-            <Carousel albumns={data}></Carousel>
+            <Carousel uniqueKey={uniqueKey} albumns={data}></Carousel>
             </>
            
            
         }
         {
-            tab && <BasicTabs data={data} labelTabs={labels}/>
+            tab && <BasicTabs uniqueKey={uniqueKey} data={data} labelTabs={labels}/>
         }
       
         </div>

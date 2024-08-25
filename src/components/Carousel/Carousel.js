@@ -8,12 +8,12 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import styles from "./Carousel.module.css";
 
-const Carousel = ({ albumns, isSongs}) => {
+const Carousel = ({ albumns, isSongs, uniqueKey }) => {
   const [isBeginning, setIsBeginning] = useState(true);
   const [isEnd, setIsEnd] = useState(false);
   const swiperRef = useRef(null);
 
-
+  console.log(`Key: ${uniqueKey}`)
   const handleSlideChange = (swiper) => {
     setIsBeginning(swiper.isBeginning);
     setIsEnd(swiper.isEnd);
@@ -22,12 +22,12 @@ const Carousel = ({ albumns, isSongs}) => {
   return (
     <div style={{ position: "relative" }}>
       <Swiper
-        modules={[Navigation,Scrollbar, A11y]}
+        modules={[Navigation, Scrollbar, A11y]}
         spaceBetween={20}
         slidesPerView={6}
         navigation={{
-          nextEl: `.${styles['swiper-button-next']}`,
-          prevEl: `.${styles['swiper-button-prev']}`,
+          nextEl: `.${styles[`swiper-button-next-${uniqueKey}`]}`,
+          prevEl: `.${styles[`swiper-button-prev-${uniqueKey}`]}`,
         }}
         scrollbar={{ draggable: true }}
         onSlideChange={handleSlideChange}
@@ -44,13 +44,13 @@ const Carousel = ({ albumns, isSongs}) => {
 
       {/* The navigation buttons with conditional visibility */}
       <div
-        className={`${styles['swiper-button']} ${styles['swiper-button-prev']} ${isBeginning ? styles.hidden : ''}`}
+        className={`${styles['swiper-button']} ${styles[`swiper-button-prev-${uniqueKey}`]} ${isBeginning ? styles.hidden : ''}`}
         onClick={() => swiperRef.current?.slidePrev()}
       >
         &#8249;
       </div>
       <div
-        className={`${styles['swiper-button']} ${styles['swiper-button-next']} ${isEnd ? styles.hidden : ''}`}
+        className={`${styles['swiper-button']} ${styles[`swiper-button-next-${uniqueKey}`]} ${isEnd ? styles.hidden : ''}`}
         onClick={() => swiperRef.current?.slideNext()}
       >
         &#8250;
