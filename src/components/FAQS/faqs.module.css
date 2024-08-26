@@ -1,0 +1,17 @@
+.faqsContainer{
+
+    width: 1135px;
+    height: auto;
+    margin-left: 9.53125rem;
+    margin-right: 9.53125rem;
+    border-radius: 0px 0px 10px 10px;
+    border: 1px 0px 0px 0px;
+   
+
+}
+
+.faqsContainer h1{
+    font-size: 3.125rem;
+    color: #fff;
+    font-family: var(--font);
+}

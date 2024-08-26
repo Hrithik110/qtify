@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import styles from "./main.module.css";
 import Section from "./Section/Section";
 import axios from 'axios';
+import Faqs from "./FAQS/Faqs";
 
 
 const Main = () => {
@@ -70,7 +71,7 @@ const Main = () => {
 
   <hr></hr>
 
-  <div></div>
+  <Faqs/>
     </div>
          
           

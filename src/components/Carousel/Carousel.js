@@ -13,7 +13,6 @@ const Carousel = ({ albumns, isSongs, uniqueKey }) => {
   const [isEnd, setIsEnd] = useState(false);
   const swiperRef = useRef(null);
 
-  console.log(`Key: ${uniqueKey}`)
   const handleSlideChange = (swiper) => {
     setIsBeginning(swiper.isBeginning);
     setIsEnd(swiper.isEnd);
